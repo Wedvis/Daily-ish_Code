@@ -1,0 +1,10 @@
+public class Variables {
+	public static void main(String[] args) {
+	  
+		int x;
+        x = 5;
+        x * x = y;
+        System.out.println(x);
+        System.out.println(y);
+	}
+}
