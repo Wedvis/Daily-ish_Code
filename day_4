@@ -1,0 +1,18 @@
+import java.util.Scanner;
+public class idk {
+    public static void main(String args[]) {
+        Scanner scnr = new Scanner(System.in);
+        int x = scnr.nextInt();
+        
+        if (x < 0) {
+            System.out.println("Negative number outputted.");
+        }
+        else if (x >= 0) {
+            System.out.println("Positive number outputted.");
+        }
+        else {
+            System.out.println("Invalid input");
+        }
+    System.out.println("Code complete");
+  }
+}
