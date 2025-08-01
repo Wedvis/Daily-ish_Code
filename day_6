@@ -1,0 +1,29 @@
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner scnr = new Scanner(System.in);
+        System.out.println("Enter your name");
+        String name = scnr.nextLine();
+        System.out.println("Hello " + name + "! What is your age?");
+        int age = 0;
+        while (true) {
+            age = scnr.nextInt();
+            System.out.println("You are " + age + " years old? (Confirm with Y/N)");
+            char input = scnr.next().trim().toUpperCase().charAt(0);
+            if (input == 'Y') {
+                System.out.println("Thanks for confirming.\n");
+                break;
+            }
+            else if (input == 'N') {
+                System.out.println("Please enter your correct age.");
+            }
+            else {
+                System.out.println("Sorry, that was an invalid input. Please re-enter your age.");
+            }
+        }
+        System.out.println("Your name is " + name + " and you are " + age + " years old! Thanks for playing!");
+        
+        scnr.close();
+	}
+}
