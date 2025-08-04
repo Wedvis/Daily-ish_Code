@@ -1,0 +1,23 @@
+import java.util.Scanner;
+public class RowsAndColumns {
+	public static void main(String args[]) {
+		
+		Scanner scnr = new Scanner(System.in);
+
+		int rows;
+		int columns;
+		String symbol = "";
+		System.out.println("Enter # of rows: ");
+		rows = scnr.nextInt();
+		System.out.println("Enter # of columns: ");
+		columns = scnr.nextInt();
+		System.out.println("Enter symbol to use : ");
+		symbol = scnr.next();
+		for(int i=1; i<=rows; i++) {
+			System.out.println();
+			for(int j=1; j<=columns; j++) {
+				System.out.print(symbol);
+			}
+		}
+	}
+}
