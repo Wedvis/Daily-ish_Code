@@ -1,0 +1,18 @@
+import java.util.Scanner;
+public class Main {
+	public static void main(String[] args) {
+		Scanner scnr = new Scanner(System.in);
+		double width = 0;
+		double height = 0;
+		double area = 0;
+		
+		System.out.println("Enter your width: ");
+		width = scnr.nextDouble();
+		System.out.println("Enter your height: ");
+		height = scnr.nextDouble();
+		area = width * height;
+		System.out.println("Your area is: " + area);
+		
+		scnr.close();
+	}
+}
